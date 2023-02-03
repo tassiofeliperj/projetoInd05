@@ -6,6 +6,6 @@ Após digitar "sair", a aplicação será finalizada e mostrará tudo que foi ar
 
 
 # Como rodar o projeto:
-Clone o projeto para rodá-lo localmente.
-Caso não tenha instalado, abra o terminal e instale o npm utilizando o código "npm install"
-Utilize o código "node projetoind.js" para rodar o projeto no próprio terminal.
+<li> Clone o projeto para rodá-lo localmente.</li>
+<li> Caso não tenha instalado, abra o terminal e instale o npm utilizando o código "npm install"</li>
+<li> Utilize o código "node projetoind.js" para rodar o projeto no próprio terminal.</li>
