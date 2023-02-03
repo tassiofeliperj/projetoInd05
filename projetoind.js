@@ -1,7 +1,8 @@
-const readlineSync = require("readline-sync");
+import readlineSync from "readline-sync";
+
 
 const lista = [];
-let   resp = "";
+let   respostaDaLista = "";
 
 const adicionarNaLista = (prop) => {
   lista.push(prop);
@@ -11,7 +12,7 @@ const ordenar = () => {
   lista.sort();
 };
 
-const listar = () => {
+const Verificarlista = () => {
   //console.log(lista); //Lista como objeto array
   //console.log(lista.toString()); //Lista array de string
   lista.forEach((elemento)=> { console.log(elemento); }); //Lista por linha como string
@@ -19,14 +20,15 @@ const listar = () => {
 
 
 while (true) {
-  resp = readlineSync.question("Digite a propriedade CSS ou 'SAIR' para exibir a listagem e encerrar: ");
+  respostaDaLista = readlineSync.question("Digite a propriedade CSS ou 'SAIR' para exibir a listagem e encerrar: ");
  
-  if (resp.toLowerCase() == "sair") {
+  if (respostaDaLista.toLowerCase() == "sair") {
     ordenar();
-    listar();
+    Verificarlista();
 	  break;
   	
-  } else if (resp.toLowerCase() !== "sair" && resp !=="") {
-    adicionarNaLista(resp);
+  }
+  else if (respostaDaLista.toLowerCase() !== "sair" && respostaDaLista !=="") {
+    adicionarNaLista(respostaDaLista);
   }
 }
